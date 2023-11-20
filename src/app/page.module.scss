@@ -1,12 +1,10 @@
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+.wrapper {
+  min-height: 100%;
 }
 
-// @media (prefers-color-scheme: dark) {
-
-// }
+.header {
+  height: 160px;
+  background-image: url('/desktop/bg-pattern-header.svg');
+  background-position: 0%;
+  background-size: cover;
+}
