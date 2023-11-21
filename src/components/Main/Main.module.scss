@@ -1,0 +1,12 @@
+.wrapper {
+  grid-area: main;
+  background-color: var(--background);
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-top: 146px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  gap: 65px 30px;
+}
