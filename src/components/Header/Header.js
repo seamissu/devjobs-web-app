@@ -6,6 +6,7 @@ import SunIcon from '../SunIcon';
 import MoonIcon from '../MoonIcon';
 
 import ThemeButton from '../ThemeButton';
+import SearchForm from '../SearchForm';
 
 function Header() {
   return (
@@ -18,7 +19,7 @@ function Header() {
           <MoonIcon />
         </div>
       </div>
-      <section></section>
+      <SearchForm />
     </header>
   );
 }
