@@ -1,0 +1,31 @@
+.lightmode {
+  background-color: var(--white);
+  border: none;
+  border-radius: 5000px;
+  width: 48px;
+  height: 24px;
+}
+
+.ball {
+  background-color: var(--violet);
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+}
+
+.darkmode {
+  background-color: var(--white);
+  border: none;
+  border-radius: 5000px;
+  width: 48px;
+  height: 24px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+[data-theme='dark'] .lightmode,
+[data-theme='light'] .darkmode {
+  display: none;
+}

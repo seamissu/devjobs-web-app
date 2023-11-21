@@ -1,5 +1,5 @@
 import { Kumbh_Sans } from 'next/font/google';
-import { Provider } from '@/components/Provider';
+import { Providers } from './providers';
 import './globals.scss';
 
 const kumbhsans = Kumbh_Sans({
@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={kumbhsans.className}>
-        <Provider>{children}</Provider>
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
