@@ -16,7 +16,7 @@ function DetailPage({ params }) {
   if (!validSlugs.includes(Number(slug)))
     return <h1>404 Not Found</h1>;
 
-  const company = Array.find((item) => item.id == slug);
+  const company = Array.find((item) => item.id === Number(slug));
 
   return (
     <div className={styles.wrapper}>

@@ -9,4 +9,9 @@
   font-size: var(--font-size-body);
   font-weight: 700;
   line-height: 1;
+
+  &:hover,
+  &:focus {
+    background-color: var(--hover-background);
+  }
 }
