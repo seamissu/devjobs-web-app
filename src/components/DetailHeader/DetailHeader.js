@@ -6,6 +6,8 @@ import SunIcon from '../SunIcon';
 import MoonIcon from '../MoonIcon';
 import ThemeButton from '../ThemeButton';
 
+import CompanyHeading from '../CompanyHeading';
+
 function DetailHeader() {
   return (
     <header className={styles.wrapper}>
@@ -17,7 +19,7 @@ function DetailHeader() {
           <MoonIcon />
         </div>
       </div>
-      <div></div>
+      <CompanyHeading />
     </header>
   );
 }
