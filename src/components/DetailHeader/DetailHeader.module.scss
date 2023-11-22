@@ -1,0 +1,27 @@
+.wrapper {
+  grid-area: header;
+
+  position: relative;
+  height: 160px;
+  background-image: url('/desktop/bg-pattern-header.svg');
+  background-position: 0%;
+  background-size: cover;
+  background-color: var(--background);
+
+  padding-left: 165px;
+  padding-right: 165px;
+  padding-top: 45px;
+}
+
+.superheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconwrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
