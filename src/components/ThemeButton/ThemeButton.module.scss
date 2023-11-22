@@ -4,6 +4,13 @@
   border-radius: 5000px;
   width: 48px;
   height: 24px;
+
+  &:focus,
+  &:hover {
+    .ball {
+      background-color: var(--light-violet);
+    }
+  }
 }
 
 .ball {
@@ -23,6 +30,13 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  &:focus,
+  &:hover {
+    .ball {
+      background-color: var(--light-violet);
+    }
+  }
 }
 
 [data-theme='dark'] .lightmode,

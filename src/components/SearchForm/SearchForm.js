@@ -6,8 +6,8 @@ import styles from './SearchForm.module.scss';
 import SearchIcon from '../SearchIcon';
 import LocationIcon from '../LocationIcon';
 
-import SearchButton from '../SearchButton';
 import CheckIcon from '../CheckIcon';
+import Button from '../Button';
 
 function SearchForm() {
   const [title, setTitle] = React.useState('');
@@ -67,7 +67,9 @@ function SearchForm() {
             {isfulltime && <CheckIcon />}
           </div>
         </label>
-        <SearchButton />
+        <Button width={123} height={48}>
+          Search
+        </Button>
       </div>
     </form>
   );

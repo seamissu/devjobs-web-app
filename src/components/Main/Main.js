@@ -4,7 +4,7 @@ import styles from './Main.module.scss';
 import Card from '../Card';
 import { Array } from '@/app/data';
 
-console.log(Array);
+// console.log(Array);
 
 function Main() {
   return (
