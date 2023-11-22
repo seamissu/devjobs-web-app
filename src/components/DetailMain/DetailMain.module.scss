@@ -2,6 +2,7 @@
   grid-area: main;
   background-color: var(--background);
   padding-top: 132px;
+  padding-bottom: 80px;
 
   display: flex;
   justify-content: center;
@@ -129,4 +130,7 @@
 
 .role ol li::marker {
   color: var(--violet);
+  font-weight: 700;
+  font-size: var(--font-size-body);
+  line-height: 26px;
 }
