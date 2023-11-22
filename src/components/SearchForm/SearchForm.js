@@ -62,14 +62,22 @@ function SearchForm() {
               setIsfulltime(event.target.checked);
             }}
           />
-          Full Time Only
+          <span className={styles.onlyondesktop}>Full Time Only</span>
+          <span className={styles.onlyontablet}>Full Time</span>
           <div className={checkmarkclassName}>
             {isfulltime && <CheckIcon />}
           </div>
         </label>
-        <Button width={123} height={48}>
-          Search
-        </Button>
+        <div className={styles.onlyondesktop}>
+          <Button width={123} height={48}>
+            Search
+          </Button>
+        </div>
+        <div className={styles.onlyontablet}>
+          <Button width={80} height={48}>
+            Search
+          </Button>
+        </div>
       </div>
     </form>
   );

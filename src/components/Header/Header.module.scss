@@ -1,3 +1,7 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   grid-area: header;
 
@@ -11,6 +15,12 @@
   padding-left: 165px;
   padding-right: 165px;
   padding-top: 45px;
+
+  @media (max-width: $tablet-and-below) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 42px;
+  }
 }
 
 .superheader {

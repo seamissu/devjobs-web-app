@@ -12,6 +12,7 @@
 
   &:hover,
   &:focus {
+    cursor: pointer;
     background-color: var(--hover-background);
   }
 }

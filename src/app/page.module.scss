@@ -1,3 +1,7 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -9,6 +13,10 @@
     'footer';
   grid-template-columns: 1fr;
   grid-template-rows: 160px 1fr 208px;
+
+  @media (max-width: $tablet-and-below) {
+    grid-template-rows: 160px 1fr 165px;
+  }
 
   & > header {
     border: 2px solid red;

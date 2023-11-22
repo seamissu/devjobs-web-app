@@ -1,6 +1,14 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   position: absolute;
   display: flex;
+  // display: grid;
+  // grid-template-columns: 463px 300px 1fr;
+  // grid-template-rows: 1fr;
+
   background-color: var(--search-and-grid-background);
   border-radius: 6px;
   bottom: -40px;
@@ -10,9 +18,14 @@
   margin-right: auto;
   max-width: calc(100% - 165px * 2);
   height: 80px;
+
+  @media (max-width: $tablet-and-below) {
+    max-width: calc(100% - 40px * 2);
+  }
 }
 
 .titlewrapper {
+  flex: 1.55;
   display: flex;
   flex-direction: row;
   gap: 10px;
@@ -20,17 +33,28 @@
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
   height: 80px;
-  width: 463px;
+  max-width: 463px;
   padding-left: 32px;
   padding-top: 28px;
   padding-bottom: 28px;
 
   border-right: 1px solid hsl(210deg 16% 90%);
+
+  @media (max-width: $tablet-and-below) {
+    width: 222px;
+    padding-left: 24px;
+    flex: 1.06;
+  }
 }
 
 .titlewrapper input {
   border: none;
   background-color: var(--search-and-grid-background);
+  width: 230px;
+
+  @media (max-width: $tablet-and-below) {
+    max-width: 140px;
+  }
 }
 
 .titlewrapper input::placeholder {
@@ -39,22 +63,34 @@
 }
 
 .locationwrapper {
+  flex: 1;
   display: flex;
   gap: 10px;
   background-color: var(--search-and-grid-background);
   height: 80px;
-  width: 300px;
+  max-width: 300px;
   padding-left: 23px;
   padding-top: 28px;
   padding-bottom: 28px;
 
   margin-right: 30px;
   border-right: 1px solid hsl(210deg 16% 90%);
+
+  @media (max-width: $tablet-and-below) {
+    width: 213px;
+    margin-right: 40px;
+    padding-right: 20px;
+  }
 }
 
 .locationwrapper input {
   border: none;
   background-color: var(--search-and-grid-background);
+  width: 180px;
+
+  @media (max-width: $tablet-and-below) {
+    max-width: 140px;
+  }
 }
 
 .locationwrapper input::placeholder {
@@ -63,15 +99,23 @@
 }
 
 .fulltimewrapper {
+  flex: 1.15;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: var(--search-and-grid-background);
   height: 80px;
   width: 345px;
+  margin-left: auto;
   padding-left: 32px;
   padding-right: 16px;
   border-radius: 6px;
+
+  @media (max-width: $tablet-and-below) {
+    width: 250px;
+    padding-left: 20px;
+    flex: 1.18;
+  }
 }
 
 .label {
@@ -81,11 +125,34 @@
 
   display: block;
   position: relative;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .input {
   width: 0;
   height: 0;
+}
+
+.onlyondesktop {
+  @media (max-width: $tablet-and-below) {
+    display: none;
+  }
+}
+
+.onlyontablet {
+  display: none;
+
+  @media (max-width: $tablet-and-below) {
+    display: revert;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
 }
 
 .checkmark {
@@ -97,6 +164,10 @@
 
   display: grid;
   place-content: center;
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .unchecked {

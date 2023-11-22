@@ -1,3 +1,10 @@
+// Use Scss variable
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
+$tablet-background-image: 768px;
+$mobile-background-image: 375px;
+
 // CSS Reset
 *,
 *::before,

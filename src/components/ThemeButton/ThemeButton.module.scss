@@ -7,6 +7,7 @@
 
   &:focus,
   &:hover {
+    cursor: pointer;
     .ball {
       background-color: var(--light-violet);
     }
@@ -33,6 +34,7 @@
 
   &:focus,
   &:hover {
+    cursor: pointer;
     .ball {
       background-color: var(--light-violet);
     }

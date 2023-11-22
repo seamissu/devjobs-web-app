@@ -9,6 +9,7 @@
 
   &:hover,
   &:focus {
+    cursor: pointer;
     background-color: var(--light-violet);
   }
 }
