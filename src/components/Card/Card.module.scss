@@ -35,6 +35,11 @@
   color: var(--font-color);
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .wrapper h4 {
   font-size: var(--font-size-heading-4);
   font-weight: 700;

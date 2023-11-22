@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import styles from './DetailHeader.module.scss';
 
@@ -8,7 +10,7 @@ import ThemeButton from '../ThemeButton';
 
 import CompanyHeading from '../CompanyHeading';
 
-function DetailHeader() {
+function DetailHeader({ company }) {
   return (
     <header className={styles.wrapper}>
       <div className={styles.superheader}>
@@ -19,7 +21,7 @@ function DetailHeader() {
           <MoonIcon />
         </div>
       </div>
-      <CompanyHeading />
+      <CompanyHeading company={company} />
     </header>
   );
 }
