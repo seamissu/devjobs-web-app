@@ -1,3 +1,10 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
+$tablet-background-image: 768px;
+$mobile-background-image: 375px;
+
 .wrapper {
   display: flex;
   flex-direction: row;
@@ -14,6 +21,15 @@
 
   border-radius: 6px;
   border-top-left-radius: 0px;
+
+  @media (max-width: $tablet-and-below) {
+    width: revert;
+    max-width: 689px;
+  }
+
+  @media (max-width: $tablet-background-image) {
+    width: calc(100% - 40px * 2);
+  }
 }
 
 .logowrapper {

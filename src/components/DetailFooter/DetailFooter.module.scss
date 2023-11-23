@@ -1,9 +1,18 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   grid-area: footer;
   background-color: var(--search-and-grid-background);
 
   display: flex;
   justify-content: center;
+
+  @media (max-width: $tablet-and-below) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .innerwrapper {
@@ -15,6 +24,11 @@
   height: 96px;
 
   border: 2px solid blue;
+
+  @media (max-width: $tablet-and-below) {
+    max-width: 689px;
+    width: 100%;
+  }
 }
 
 .innerwrapper h3 {

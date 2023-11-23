@@ -1,3 +1,7 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   grid-area: main;
   background-color: var(--background);
@@ -6,6 +10,11 @@
 
   display: flex;
   justify-content: center;
+
+  @media (max-width: $tablet-and-below) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 }
 
 .article {
@@ -14,6 +23,12 @@
   border: 2px solid yellow;
   padding: 48px;
   padding-right: 43px;
+
+  @media (max-width: $tablet-and-below) {
+    width: revert;
+    max-width: 689px;
+    padding-right: 48px;
+  }
 }
 
 .applywrapper {
