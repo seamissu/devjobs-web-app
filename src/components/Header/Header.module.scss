@@ -21,6 +21,14 @@ $mobile-and-below: 550px;
     padding-right: 40px;
     padding-top: 42px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 32px;
+
+    background-image: url('/mobile/bg-pattern-header.svg');
+  }
 }
 
 .superheader {

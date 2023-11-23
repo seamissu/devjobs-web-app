@@ -1,3 +1,7 @@
+// Breakpoints
+$tablet-and-below: 1100px;
+$mobile-and-below: 550px;
+
 .wrapper {
   grid-area: footer;
   background-color: var(--background);
@@ -5,4 +9,8 @@
 
   display: flex;
   justify-content: center;
+
+  @media (max-width: $mobile-and-below) {
+    padding-top: 32px;
+  }
 }

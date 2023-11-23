@@ -15,9 +15,16 @@ function DetailMain({ company }) {
             <h1>{company.position}</h1>
             <h4>{company.location}</h4>
           </div>
-          <Button width={141} height={48}>
-            Apply Now
-          </Button>
+          <div className={styles.desktopandtablet}>
+            <Button width={141} height={48}>
+              Apply Now
+            </Button>
+          </div>
+          <div className={styles.onlyonmobile}>
+            <Button width={272} height={48}>
+              Apply Now
+            </Button>
+          </div>
         </section>
 
         <section className={styles.description}>

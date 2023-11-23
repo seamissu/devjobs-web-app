@@ -14,6 +14,14 @@ $mobile-and-below: 550px;
   @media (max-width: $tablet-and-below) {
     padding-left: 40px;
     padding-right: 40px;
+    padding-bottom: 53px;
+  }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 215px;
+    padding-bottom: 64px;
   }
 }
 
@@ -29,6 +37,13 @@ $mobile-and-below: 550px;
     max-width: 689px;
     padding-right: 48px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 
 .applywrapper {
@@ -37,6 +52,14 @@ $mobile-and-below: 550px;
   align-items: center;
 
   margin-bottom: 44px;
+
+  @media (max-width: $mobile-and-below) {
+    flex-direction: column;
+    align-items: revert;
+    gap: 54px;
+
+    margin-bottom: 32px;
+  }
 }
 
 .applywrapper p {
@@ -55,6 +78,10 @@ $mobile-and-below: 550px;
   color: var(--font-color);
 
   margin-bottom: 14px;
+
+  @media (max-width: $mobile-and-below) {
+    font-size: var(--font-size-heading-3);
+  }
 }
 
 .applywrapper h4 {
@@ -62,6 +89,20 @@ $mobile-and-below: 550px;
   font-weight: 700;
   line-height: 1;
   color: var(--violet);
+}
+
+.desktopandtablet {
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
+}
+
+.onlyonmobile {
+  display: none;
+  @media (max-width: $mobile-and-below) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .description {
@@ -75,6 +116,10 @@ $mobile-and-below: 550px;
 
 .requirements {
   margin-bottom: 48px;
+
+  @media (max-width: $tablet-and-below) {
+    margin-bottom: 40px;
+  }
 }
 
 .requirements h3 {
@@ -88,6 +133,10 @@ $mobile-and-below: 550px;
   line-height: var(--line-height-body);
 
   margin-bottom: 24px;
+
+  @media (max-width: $mobile-and-below) {
+    margin-bottom: 32px;
+  }
 }
 
 .requirements ul {
@@ -123,6 +172,10 @@ $mobile-and-below: 550px;
   line-height: var(--line-height-body);
 
   margin-bottom: 24px;
+
+  @media (max-width: $mobile-and-below) {
+    margin-bottom: 32px;
+  }
 }
 
 .role ol {

@@ -23,6 +23,16 @@ $mobile-and-below: 550px;
     grid-template-rows: repeat(6, 1fr);
     gap: 65px 10px;
   }
+
+  @media (max-width: $mobile-and-below) {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 97px;
+
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+    gap: 49px;
+  }
 }
 
 .warning {
