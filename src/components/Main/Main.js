@@ -1,15 +1,22 @@
+'use client';
+
 import React from 'react';
 import styles from './Main.module.scss';
 
 import Card from '../Card';
-import { Array } from '@/app/data';
 
-// console.log(Array);
+function Main({ items }) {
+  if (items.length === 0) {
+    return (
+      <h1 className={styles.warning}>
+        Sorry, no results match your search criteria.
+      </h1>
+    );
+  }
 
-function Main() {
   return (
     <main className={styles.wrapper}>
-      {Array.map((company) => (
+      {items.map((company) => (
         <Card key={company.id} company={company} />
       ))}
     </main>

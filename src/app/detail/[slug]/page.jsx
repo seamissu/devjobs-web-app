@@ -14,7 +14,7 @@ function DetailPage({ params }) {
   const slug = params.slug;
 
   if (!validSlugs.includes(Number(slug)))
-    return <h1>404 Not Found</h1>;
+    return <h1 className={styles.warning}>404 Page Not Found</h1>;
 
   const company = Array.find((item) => item.id === Number(slug));
 

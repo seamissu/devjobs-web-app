@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import styles from './Header.module.scss';
 
@@ -8,7 +10,7 @@ import MoonIcon from '../MoonIcon';
 import ThemeButton from '../ThemeButton';
 import SearchForm from '../SearchForm';
 
-function Header() {
+function Header({ handleSearch }) {
   return (
     <header className={styles.wrapper}>
       <div className={styles.superheader}>
@@ -19,7 +21,7 @@ function Header() {
           <MoonIcon />
         </div>
       </div>
-      <SearchForm />
+      <SearchForm handleSearch={handleSearch} />
     </header>
   );
 }

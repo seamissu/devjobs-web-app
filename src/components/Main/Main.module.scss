@@ -24,3 +24,8 @@ $mobile-and-below: 550px;
     gap: 65px 10px;
   }
 }
+
+.warning {
+  display: grid;
+  place-content: center;
+}

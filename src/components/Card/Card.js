@@ -1,4 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
+
+'use client';
+
 import React from 'react';
 import styles from './Card.module.scss';
 import Link from 'next/link';

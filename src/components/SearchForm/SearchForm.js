@@ -9,7 +9,7 @@ import LocationIcon from '../LocationIcon';
 import CheckIcon from '../CheckIcon';
 import Button from '../Button';
 
-function SearchForm() {
+function SearchForm({ handleSearch }) {
   const [title, setTitle] = React.useState('');
   const [location, setLocation] = React.useState('');
   const [isfulltime, setIsfulltime] = React.useState(false);
@@ -20,6 +20,12 @@ function SearchForm() {
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    handleSearch(title, location, isfulltime);
+
+    setTitle('');
+    setLocation('');
+    setIsfulltime(false);
   }
 
   return (
