@@ -20,13 +20,13 @@ export default function Home() {
     if (title === '') {
       firstFilterArray = [...Array];
     } else {
-      firstFilterArray = items.filter((item) =>
+      firstFilterArray = Array.filter((item) =>
         item.position.toLowerCase().includes(title.toLowerCase())
       );
     }
 
     if (location === '') {
-      secondFilterArray = [...firstFilterArray];
+      secondFilterArray = firstFilterArray;
     } else {
       secondFilterArray = firstFilterArray.filter((item) =>
         item.location.toLowerCase().includes(location.toLowerCase())
@@ -34,7 +34,7 @@ export default function Home() {
     }
 
     if (isfulltime === false) {
-      thirdFilterArray = [...secondFilterArray];
+      thirdFilterArray = secondFilterArray;
     } else {
       thirdFilterArray = secondFilterArray.filter(
         (item) => item.contract === 'Full Time'
@@ -44,9 +44,50 @@ export default function Home() {
     setItems(thirdFilterArray);
   }
 
+  function handleSearchTitle(title) {
+    let titleFilterArray;
+
+    if (title === '') {
+      titleFilterArray = [...Array];
+    } else {
+      titleFilterArray = Array.filter((item) =>
+        item.position.toLowerCase().includes(title.toLowerCase())
+      );
+    }
+
+    setItems(titleFilterArray);
+  }
+
+  function handleLocationAndFulltime(location, isfulltime) {
+    let LocationFilterArray;
+    let FulltimeFilterArray;
+
+    if (location === '') {
+      LocationFilterArray = [...Array];
+    } else {
+      LocationFilterArray = Array.filter((item) =>
+        item.location.toLowerCase().includes(location.toLowerCase())
+      );
+    }
+
+    if (isfulltime === false) {
+      FulltimeFilterArray = LocationFilterArray;
+    } else {
+      FulltimeFilterArray = LocationFilterArray.filter(
+        (item) => item.contract === 'Full Time'
+      );
+    }
+
+    setItems(FulltimeFilterArray);
+  }
+
   return (
     <div className={styles.wrapper}>
-      <Header handleSearch={handleSearch} />
+      <Header
+        handleSearch={handleSearch}
+        handleSearchTitle={handleSearchTitle}
+        handleLocationAndFulltime={handleLocationAndFulltime}
+      />
       <Main items={items} />
       <Footer />
     </div>

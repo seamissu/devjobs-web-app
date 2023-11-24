@@ -12,4 +12,7 @@
     cursor: pointer;
     background-color: var(--light-violet);
   }
+
+  display: grid;
+  place-content: center;
 }

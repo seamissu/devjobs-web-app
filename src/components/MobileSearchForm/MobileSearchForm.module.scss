@@ -1,0 +1,157 @@
+.wrapper {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  bottom: -40px;
+
+  padding-left: 24px;
+  padding-right: 16px;
+
+  width: calc(100% - 24px * 2);
+  height: 80px;
+  background-color: var(--search-and-grid-background);
+  border-radius: 6px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.wrapper input {
+  border: none;
+  background-color: var(--search-and-grid-background);
+
+  margin-right: auto;
+  max-width: 150px;
+}
+
+.triggerbutton {
+  border: none;
+  background: none;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: hsl(0deg 0% 0% / 0.5);
+  animation: fadeIn 850ms cubic-bezier(0.14, 0.78, 0.36, 1);
+}
+
+.content {
+  background-color: var(--search-and-grid-background);
+  border-radius: 6px;
+  position: fixed;
+  inset: 0;
+  margin: auto;
+  width: calc(100% - 24px * 2);
+  height: 217px;
+}
+
+.innerform {
+  background-color: var(--search-and-grid-background);
+  border-radius: 6px;
+}
+
+.locationwrapper {
+  display: flex;
+  gap: 16px;
+
+  background-color: var(--search-and-grid-background);
+  height: 72px;
+  padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+
+  border-bottom: 1px solid hsl(210deg 16% 90%);
+}
+
+.locationwrapper input {
+  border: none;
+  background-color: var(--search-and-grid-background);
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.fulltimewrapper {
+  display: flex;
+  align-items: center;
+  background-color: var(--search-and-grid-background);
+  height: 72px;
+  padding-left: 64px;
+}
+
+.label {
+  font-size: var(--font-size-body);
+  font-weight: 700;
+  color: var(--font-color);
+
+  display: block;
+  position: relative;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.input {
+  width: 0;
+  height: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: -40px;
+  width: 24px;
+  height: 24px;
+
+  display: grid;
+  place-content: center;
+
+  &:focus,
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.unchecked {
+  background-color: var(--unchecked-background);
+}
+
+.checked {
+  background-color: var(--violet);
+}
+
+.submitbutton {
+  border: none;
+  background-color: var(--violet);
+
+  font-size: var(--font-size-bod);
+  font-weight: 700;
+  color: var(--white);
+  border-radius: 5px;
+
+  width: 279px;
+  height: 48px;
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+    background-color: var(--light-violet);
+  }
+
+  display: grid;
+  place-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+}

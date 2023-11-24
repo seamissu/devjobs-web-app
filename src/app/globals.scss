@@ -1,4 +1,4 @@
-// Use Scss variable
+// Breakpoints
 $tablet-and-below: 1100px;
 $mobile-and-below: 550px;
 
@@ -64,6 +64,9 @@ h6 {
   --button-background: hsl(236deg 70% 96%);
   --hover-background: hsl(235deg 68% 86%);
 
+  // Mobile Filter Icon
+  --fill-color: hsl(214deg 17% 51%);
+
   --violet: hsl(235deg 69% 61%);
   --light-violet: hsl(235deg 82% 77%);
   --very-dark-blue: hsl(219deg 29% 14%); //**
@@ -101,4 +104,7 @@ h6 {
   --button-font-color: hsl(0deg 0% 100%);
   --button-background: hsl(220deg 16% 22%);
   --hover-background: hsl(216deg 8% 35%);
+
+  // Mobile Filter Icon
+  --fill-color: hsl(0deg 0% 100%);
 }

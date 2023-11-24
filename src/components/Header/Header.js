@@ -9,8 +9,13 @@ import MoonIcon from '../MoonIcon';
 
 import ThemeButton from '../ThemeButton';
 import SearchForm from '../SearchForm';
+import MobileSearchForm from '../MobileSearchForm';
 
-function Header({ handleSearch }) {
+function Header({
+  handleSearch,
+  handleSearchTitle,
+  handleLocationAndFulltime,
+}) {
   return (
     <header className={styles.wrapper}>
       <div className={styles.superheader}>
@@ -21,7 +26,15 @@ function Header({ handleSearch }) {
           <MoonIcon />
         </div>
       </div>
-      <SearchForm handleSearch={handleSearch} />
+      <div className={styles.notonmobile}>
+        <SearchForm handleSearch={handleSearch} />
+      </div>
+      <div className={styles.onlyonmobile}>
+        <MobileSearchForm
+          handleSearchTitle={handleSearchTitle}
+          handleLocationAndFulltime={handleLocationAndFulltime}
+        />
+      </div>
     </header>
   );
 }

@@ -31,7 +31,7 @@ $mobile-and-below: 550px;
 
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr);
-    gap: 49px;
+    gap: 49px 0px;
   }
 }
 

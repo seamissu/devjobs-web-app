@@ -27,6 +27,8 @@ $mobile-and-below: 550px;
     padding-right: 24px;
     padding-top: 32px;
 
+    height: 136px;
+
     background-image: url('/mobile/bg-pattern-header.svg');
   }
 }
@@ -42,4 +44,18 @@ $mobile-and-below: 550px;
   justify-content: space-between;
   align-items: center;
   gap: 16px;
+}
+
+.notonmobile {
+  @media (max-width: $mobile-and-below) {
+    display: none;
+  }
+}
+
+.onlyonmobile {
+  display: none;
+
+  @media (max-width: $mobile-and-below) {
+    display: revert;
+  }
 }
