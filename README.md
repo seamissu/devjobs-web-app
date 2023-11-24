@@ -37,11 +37,11 @@ Users should be able to:
 
 ### Built with
 
-- [React](https://reactjs.org/) - UI library
+- [React](https://react.dev/) - UI library
 - [Next.js](https://nextjs.org/) - React metaframework
 - [Sass/Scss](https://sass-lang.com/) - For styles
 - [CSS-Modules](https://github.com/css-modules/css-modules) - For component-level CSS styles
-- [Radix UI](https://github.com/css-modules/css-modules) - A modal component with accessibility
+- [Radix UI](https://www.radix-ui.com/) - A modal component with accessibility
 - CSS Flexbox
 - CSS Grid
 
